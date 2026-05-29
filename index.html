@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS:GO 2017 Hub</title>
+    <title>CS:GO Hub</title>
     <style>
-        /* Basic reset and dark background setup */
         body {
             background-color: #0d0d0d;
             color: #ffffff;
@@ -16,7 +15,6 @@
             justify-content: center;
         }
 
-        /* Container is BIG (wide layout) */
         .container {
             width: 100%;
             max-width: 1100px;
@@ -27,7 +25,6 @@
             overflow: hidden;
         }
 
-        /* Top thin green text bar */
         .top-bar {
             background-color: #0b0506;
             padding: 5px 15px;
@@ -35,11 +32,20 @@
             color: #39b54a;
         }
 
-        /* Header section with the yellow title */
         .header {
             text-align: center;
             padding: 25px 10px;
             background: radial-gradient(circle, #2d1e21 0%, #170f10 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-img {
+            width: 150px; 
+            height: auto;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
         }
 
         .header h1 {
@@ -51,26 +57,25 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
         }
 
-        /* BIGGER RED DISPLAY AREA */
         .game-display {
-            padding: 120px 40px; 
+            padding: 80px 40px; 
             min-height: 250px;   
             background-color: rgba(0, 0, 0, 0.2);
             display: flex;
+            flex-direction: column;
             justify-content: flex-start; 
             align-items: flex-start;
+            gap: 20px; 
         }
 
-        /* Style for the link - Text is SMALL, underline is removed */
         .game-link {
             font-size: 16px; 
             color: #e0e0e0;
-            text-decoration: none; /* Removes the default blue underline */
+            text-decoration: none;
             transition: color 0.2s ease;
             width: fit-content;
         }
 
-        /* Hover effect makes it turn yellow when cursor is over it */
         .game-link:hover {
             color: #ffff00;
         }
@@ -79,21 +84,22 @@
 <body>
 
     <div class="container">
-        <!-- Top Green Link Bar -->
         <div class="top-bar">
             steamno-crew.com
         </div>
 
-        <!-- Main Title Header -->
         <div class="header">
+            <img src="https://i.ibb.co/v4bYVst/ok.jpg" alt="Steamno-Crew Logo" class="logo-img">
             <h1>www.steamno-crew.com</h1>
         </div>
 
-        <!-- Big Red/Dark Game Display Area -->
         <div class="game-display">
-            <!-- Your Clickable Link -->
             <a href="https://yazancsgocracker.github.io/yazancsgocracker-csgo-2017-mp.github.io/" class="game-link">
                 Counter-Strike: Global Offensive 2017 MP Online
+            </a>
+
+            <a href="https://drive.google.com/file/d/1aUmvk4BzzTlDR2lhfFP7bjx0AWkYhVww/view?usp=sharing" class="game-link">
+                Counter-Strike: Global Offensive 2016 MP SP
             </a>
         </div>
     </div>
