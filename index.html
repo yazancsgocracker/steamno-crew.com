@@ -2,107 +2,141 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS:GO Hub</title>
+    <title>steamno-crew.com</title>
     <style>
+        /* Base setup matching your preview image background color */
         body {
-            background-color: #0d0d0d;
+            background-color: #0b0707; /* Super deep dark brown-black background */
             color: #ffffff;
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
+            padding: 0;
         }
 
-        .container {
-            width: 100%;
-            max-width: 1100px;
-            background: linear-gradient(to bottom, #1f1416, #120c0d);
-            border: 1px solid #2d1b1e;
-            border-radius: 8px;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
-            overflow: hidden;
-        }
-
-        .top-bar {
-            background-color: #0b0506;
-            padding: 5px 15px;
-            font-size: 12px;
-            color: #39b54a;
-        }
-
-        .header {
+        /* Top Header Area Box */
+        .header-section {
+            background-color: #190f0f; /* Slightly lighter reddish-black gradient box */
             text-align: center;
-            padding: 25px 10px;
-            background: radial-gradient(circle, #2d1e21 0%, #170f10 100%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
+            padding: 40px 20px;
+            border-bottom: 1px solid #231515;
         }
 
-        .logo-img {
-            width: 150px; 
-            height: auto;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
+        /* Your new skull avatar locked perfectly at 64x64px */
+        .header-logo {
+            width: 64px;
+            height: 64px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 15px auto;
         }
 
-        .header h1 {
-            color: #ffff00;
-            font-family: 'Georgia', serif;
+        /* Exact bright yellow italic website lettering font styling */
+        .website-title {
+            color: #e6e600;
+            font-family: "Georgia", serif;
             font-style: italic;
-            font-size: 32px;
+            font-weight: bold;
+            font-size: 36px;
             margin: 0;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            letter-spacing: 0.5px;
         }
 
-        .game-display {
-            padding: 80px 40px; 
-            min-height: 250px;   
-            background-color: rgba(0, 0, 0, 0.2);
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start; 
-            align-items: flex-start;
-            gap: 20px; 
+        /* Left side container alignment for game list paths */
+        .menu-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px 40px;
         }
 
-        .game-link {
-            font-size: 16px; 
-            color: #e0e0e0;
+        /* Styling for the game download links and interactive items */
+        .menu-item {
+            font-size: 17px;
+            margin-bottom: 25px;
+            user-select: none;
+        }
+
+        /* Standard link style for direct game downloads */
+        .menu-item a {
+            color: #d1c7c7;
             text-decoration: none;
-            transition: color 0.2s ease;
-            width: fit-content;
+            display: inline-block;
+            transition: color 0.2s;
         }
 
-        .game-link:hover {
-            color: #ffff00;
+        .menu-item a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        /* Text trigger style for the dropdown */
+        .dropdown-trigger {
+            color: #d1c7c7;
+            cursor: pointer;
+            display: inline-block;
+            transition: color 0.2s;
+        }
+
+        .dropdown-trigger:hover {
+            color: #ffffff;
+        }
+
+        /* Nested sub-version layout list for dropdown files */
+        .sub-version-list {
+            display: none;
+            list-style-type: none;
+            padding-left: 20px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .sub-version-list li {
+            margin: 12px 0;
+        }
+
+        .sub-version-list a {
+            color: #ff4444; /* Stand-out color for cracked game versions links */
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .sub-version-list a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="top-bar">
-            steamno-crew.com
-        </div>
-
-        <div class="header">
-            <img src="https://i.ibb.co/v4bYVst/ok.jpg" alt="Steamno-Crew Logo" class="logo-img">
-            <h1>www.steamno-crew.com</h1>
-        </div>
-
-        <div class="game-display">
-            <a href="https://yazancsgocracker.github.io/yazancsgocracker-csgo-2017-mp.github.io/" class="game-link">
-                Counter-Strike: Global Offensive 2017 MP Online
-            </a>
-
-            <a href="https://drive.google.com/file/d/1aUmvk4BzzTlDR2lhfFP7bjx0AWkYhVww/view?usp=sharing" class="game-link">
-                Counter-Strike: Global Offensive 2016 MP SP
-            </a>
-        </div>
+    <div class="header-section">
+        <img class="header-logo" src="https://i.postimg.cc/tJSfdzQ9/avatar.png" alt="STEAMNO LOGO">
+        <h1 class="website-title">www.steamno-crew.com</h1>
     </div>
+
+    <div class="menu-container">
+        
+        <div class="menu-item">
+            <a href="https://yazancsgocracker.github.io/yazancsgocracker-csgo-2017-mp.github.io/" target="_blank">Counter-Strike: Global Offensive 2017 MP Online</a>
+        </div>
+        
+        <div class="menu-item">
+            <span class="dropdown-trigger" onclick="toggleCSSMenu()">Counter-Strike Source</span>
+            
+            <ul id="cssDropdown" class="sub-version-list">
+                <li><a href="https://download1474.mediafire.com/1mb8ursubktgpeZvhoW2OIRdhjGBCn7bXjrxwcoW0n0Iyt8YJrTrSQ9vOc74gjJrd6WgqbxhSup6bpXx51mR3sL1HY8a6BXzwKtUQGjvDH_7H7Hv5QWwp0L_k0GBPeuOT4lIJehnxBv1jkHWj2pjNWxo2SZbO4TKzQjqFYf1M2R4rw/ly3qprv7gco831f/css+v91+steamno-crew.com.rar" target="_blank">- CSS Cracked v91</a></li>
+            </ul>
+        </div>
+        
+    </div>
+
+    <script>
+        function toggleCSSMenu() {
+            var list = document.getElementById("cssDropdown");
+            if (list.style.display === "block") {
+                list.style.display = "none";
+            } else {
+                list.style.display = "block";
+            }
+        }
+    </script>
 
 </body>
 </html>
