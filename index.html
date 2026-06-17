@@ -21,7 +21,7 @@
             border-bottom: 1px solid #231515;
         }
 
-        /* Your new skull avatar locked perfectly at 64x64px */
+        /* Your skull avatar locked perfectly at 64x64px */
         .header-logo {
             width: 64px;
             height: 64px;
@@ -106,27 +106,38 @@
 </head>
 <body>
 
+    <!-- Top Banner Element Header Box -->
     <div class="header-section">
         <img class="header-logo" src="https://i.postimg.cc/tJSfdzQ9/avatar.png" alt="STEAMNO LOGO">
         <h1 class="website-title">www.steamno-crew.com</h1>
     </div>
 
+    <!-- Interactive Navigation Elements List -->
     <div class="menu-container">
         
+        <!-- Added: 2013 CSGO Link -->
+        <div class="menu-item">
+            <a href="https://bzzhr.co/ljbrffa0jd8q" target="_blank">Counter-Strike: Global Offensive 2013</a>
+        </div>
+
+        <!-- 2017 CSGO Link -->
         <div class="menu-item">
             <a href="https://yazancsgocracker.github.io/yazancsgocracker-csgo-2017-mp.github.io/" target="_blank">Counter-Strike: Global Offensive 2017 MP Online</a>
         </div>
         
+        <!-- Clickable Trigger Text for the Expandable Sub-Menu -->
         <div class="menu-item">
             <span class="dropdown-trigger" onclick="toggleCSSMenu()">Counter-Strike Source</span>
             
+            <!-- The version links that roll open natively upon clicking -->
             <ul id="cssDropdown" class="sub-version-list">
-                <li><a href="https://download1474.mediafire.com/1mb8ursubktgpeZvhoW2OIRdhjGBCn7bXjrxwcoW0n0Iyt8YJrTrSQ9vOc74gjJrd6WgqbxhSup6bpXx51mR3sL1HY8a6BXzwKtUQGjvDH_7H7Hv5QWwp0L_k0GBPeuOT4lIJehnxBv1jkHWj2pjNWxo2SZbO4TKzQjqFYf1M2R4rw/ly3qprv7gco831f/css+v91+steamno-crew.com.rar" target="_blank">- CSS Cracked v91</a></li>
+                <li><a href="https://ts.bzzhr.co/d/4mnzi60hyg30"target="_blank">- CSS Cracked v93</a></li>
             </ul>
         </div>
         
     </div>
 
+    <!-- Core Script handling the toggle visibility mechanics -->
     <script>
         function toggleCSSMenu() {
             var list = document.getElementById("cssDropdown");
