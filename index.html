@@ -2,26 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>steamno-crew.com</title>
+    <title>steamno-crew.com | Home</title>
     <style>
-        /* Base setup matching your preview image background color */
         body {
-            background-color: #0b0707; /* Super deep dark brown-black background */
+            background-color: #0b0707;
             color: #ffffff;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
 
-        /* Top Header Area Box */
         .header-section {
-            background-color: #190f0f; /* Slightly lighter reddish-black gradient box */
+            background-color: #190f0f;
             text-align: center;
-            padding: 40px 20px;
-            border-bottom: 1px solid #231515;
+            padding: 40px 20px 20px 20px;
         }
 
-        /* Your skull avatar locked perfectly at 64x64px */
         .header-logo {
             width: 64px;
             height: 64px;
@@ -30,7 +26,6 @@
             margin: 0 auto 15px auto;
         }
 
-        /* Exact bright yellow italic website lettering font styling */
         .website-title {
             color: #e6e600;
             font-family: "Georgia", serif;
@@ -41,21 +36,41 @@
             letter-spacing: 0.5px;
         }
 
-        /* Left side container alignment for game list paths */
+        /* NEW: Navigation Menu Bar matching the theme */
+        .nav-bar {
+            background-color: #150c0c;
+            border-top: 1px solid #231515;
+            border-bottom: 1px solid #231515;
+            text-align: center;
+            padding: 12px 0;
+        }
+
+        .nav-link {
+            color: #d1c7c7;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0 20px;
+            text-transform: uppercase;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: #e6e600; /* Yellow highlight for hover/active tab */
+        }
+
         .menu-container {
             max-width: 800px;
             margin: 0 auto;
             padding: 50px 40px;
         }
 
-        /* Styling for the game download links and interactive items */
         .menu-item {
             font-size: 17px;
             margin-bottom: 25px;
             user-select: none;
         }
 
-        /* Standard link style for direct game downloads */
         .menu-item a {
             color: #d1c7c7;
             text-decoration: none;
@@ -68,7 +83,6 @@
             text-decoration: underline;
         }
 
-        /* Text trigger style for the dropdown */
         .dropdown-trigger {
             color: #d1c7c7;
             cursor: pointer;
@@ -80,7 +94,6 @@
             color: #ffffff;
         }
 
-        /* Nested sub-version layout list for dropdown files */
         .sub-version-list {
             display: none;
             list-style-type: none;
@@ -94,7 +107,7 @@
         }
 
         .sub-version-list a {
-            color: #ff4444; /* Stand-out color for cracked game versions links */
+            color: #ff4444;
             text-decoration: none;
             font-size: 16px;
         }
@@ -106,46 +119,38 @@
 </head>
 <body>
 
-    <!-- Top Banner Element Header Box -->
     <div class="header-section">
         <img class="header-logo" src="https://i.postimg.cc/tJSfdzQ9/avatar.png" alt="STEAMNO LOGO">
         <h1 class="website-title">www.steamno-crew.com</h1>
     </div>
 
-    <!-- Interactive Navigation Elements List -->
+    <!-- Navigation Tabs Menu -->
+    <div class="nav-bar">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="server.html" class="nav-link">CSS Server</a>
+    </div>
+
     <div class="menu-container">
-        
-        <!-- Added: 2013 CSGO Link -->
         <div class="menu-item">
             <a href="https://bzzhr.co/ljbrffa0jd8q" target="_blank">Counter-Strike: Global Offensive 2013</a>
         </div>
 
-        <!-- 2017 CSGO Link -->
         <div class="menu-item">
             <a href="https://yazancsgocracker.github.io/yazancsgocracker-csgo-2017-mp.github.io/" target="_blank">Counter-Strike: Global Offensive 2017 MP Online</a>
         </div>
         
-        <!-- Clickable Trigger Text for the Expandable Sub-Menu -->
         <div class="menu-item">
             <span class="dropdown-trigger" onclick="toggleCSSMenu()">Counter-Strike Source</span>
-            
-            <!-- The version links that roll open natively upon clicking -->
             <ul id="cssDropdown" class="sub-version-list">
-                <li><a href="https://ts.bzzhr.co/d/4mnzi60hyg30"target="_blank">- CSS Cracked v93</a></li>
+                <li><a href="https://download1474.mediafire.com/1mb8ursubktgpeZvhoW2OIRdhjGBCn7bXjrxwcoW0n0Iyt8YJrTrSQ9vOc74gjJrd6WgqbxhSup6bpXx51mR3sL1HY8a6BXzwKtUQGjvDH_7H7Hv5QWwp0L_k0GBPeuOT4lIJehnxBv1jkHWj2pjNWxo2SZbO4TKzQjqFYf1M2R4rw/ly3qprv7gco831f/css+v91+steamno-crew.com.rar" target="_blank">- CSS Cracked v91</a></li>
             </ul>
         </div>
-        
     </div>
 
-    <!-- Core Script handling the toggle visibility mechanics -->
     <script>
         function toggleCSSMenu() {
             var list = document.getElementById("cssDropdown");
-            if (list.style.display === "block") {
-                list.style.display = "none";
-            } else {
-                list.style.display = "block";
-            }
+            list.style.display = (list.style.display === "block") ? "none" : "block";
         }
     </script>
 
