@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>steamno-crew.com | Server List</title>
+    <style>
+        /* Base page theme styling */
+        body {
+            background-color: #0b0707;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Top Header Area Box */
+        .header-section {
+            background-color: #190f0f;
+            text-align: center;
+            padding: 40px 20px 20px 20px;
+            border-bottom: 1px solid #231515;
+        }
+
+        .header-logo {
+            width: 64px;
+            height: 64px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 15px auto;
+        }
+
+        .website-title {
+            color: #e6e600;
+            font-family: "Georgia", serif;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 36px;
+            margin: 0;
+            letter-spacing: 0.5px;
+        }
+
+        /* Navigation Menu Bar */
+        .nav-bar {
+            background-color: #150c0c;
+            border-bottom: 1px solid #231515;
+            text-align: center;
+            padding: 12px 0;
+        }
+
+        .nav-link {
+            color: #d1c7c7;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0 20px;
+            text-transform: uppercase;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: #e6e600;
+        }
+
+        /* Container for the Server List Interface */
+        .server-interface-container {
+            max-width: 950px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Radmin VPN Info Top Bar */
+        .radmin-top-bar {
+            background-color: #110909;
+            border: 1px solid #2c1a1a;
+            border-radius: 4px;
+            padding: 15px 20px;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .radmin-title {
+            color: #ff4444;
+            font-weight: bold;
+            font-size: 15px;
+            text-transform: uppercase;
+        }
+
+        .radmin-details {
+            font-size: 14px;
+            color: #d1c7c7;
+        }
+
+        .radmin-details span {
+            color: #ffffff;
+            font-family: monospace;
+            background: #000000;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-left: 5px;
+        }
+
+        /* Server Row Blueprint */
+        .server-row {
+            background: #140d0d;
+            border-left: 4px solid #ff00ff; /* Left edge highlight strip */
+            margin-bottom: 10px;
+            padding: 12px 15px;
+            border-radius: 0 4px 4px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: background 0.2s;
+        }
+
+        .server-row:hover {
+            background: #1c1212;
+        }
+
+        /* Row Color Variations matching your image */
+        .row-gold { border-left-color: #d4af37; }
+        .row-purple { border-left-color: #8a2be2; }
+        .row-green { border-left-color: #00ff00; }
+
+        /* Left section elements styling */
+        .left-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .status-icon {
+            font-size: 18px;
+        }
+
+        .badge {
+            font-size: 11px;
+            font-weight: bold;
+            padding: 2px 6px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+
+        .badge-gold { background-color: #d4af37; color: #000; }
+        .badge-pro { background-color: #8a2be2; color: #fff; }
+        .badge-boost { background-color: #00ff00; color: #000; }
+
+        .version-tag {
+            color: #ff4444;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .server-title-link {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .server-title-link:hover {
+            color: #e6e600;
+        }
+
+        .server-ip-sub {
+            font-size: 12px;
+            color: #7c7272;
+            margin-top: 4px;
+        }
+
+        /* Right section map layout metrics */
+        .right-meta {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            text-align: right;
+        }
+
+        .map-name {
+            font-size: 14px;
+            color: #a29797;
+            font-family: monospace;
+        }
+
+        .player-count {
+            font-size: 13px;
+            color: #d1c7c7;
+            min-width: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-section">
+        <img class="header-logo" src="https://i.postimg.cc/tJSfdzQ9/avatar.png" alt="STEAMNO LOGO">
+        <h1 class="website-title">www.steamno-crew.com</h1>
+    </div>
+
+    <div class="nav-bar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="server.html" class="nav-link active">CSS Server</a>
+    </div>
+
+    <div class="server-interface-container">
+
+        <div class="radmin-top-bar">
+            <div class="radmin-title">● RADMIN VPN ACTIVE</div>
+            <div class="radmin-details">
+                ROOM: <span>STEAMNO-CREW.COM</span>
+                <span style="margin-left: 15px;">PASSWORD:</span> <span>STEAMNO-CREW.COM</span>
+            </div>
+        </div>
+
+        <div class="server-row row-gold">
+            <div class="left-meta">
+                <span class="status-icon">👑</span>
+                <span class="badge badge-gold">GOLD</span>
+                <span class="version-tag">v93</span>
+                <div>
+                    <a href="#" class="server-title-link">STEAMNO PUBLIC | NO-STEAM | v93</a>
+                    <div class="server-ip-sub">connect 25.44.110.12:27015</div>
+                </div>
+            </div>
+            <div class="right-meta">
+                <span class="map-name">de_dust2</span>
+                <span class="player-count">👥 12 / 32</span>
+            </div>
+        </div>
+
+        <div class="server-row row-purple">
+            <div class="left-meta">
+                <span class="status-icon">💀</span>
+                <span class="badge badge-pro">PRO</span>
+                <span class="version-tag">v93</span>
+                <div>
+                    <a href="#" class="server-title-link">.:CAROLINA REAPER:. ZM/ZE [Shop|Mine|Turret]</a>
+                    <div class="server-ip-sub">connect 25.44.110.12:27016</div>
+                </div>
+            </div>
+            <div class="right-meta">
+                <span class="map-name">ze_surf_vortex_v1</span>
+                <span class="player-count">👥 6 / 64</span>
+            </div>
+        </div>
+
+        <div class="server-row row-green">
+            <div class="left-meta">
+                <span class="status-icon">🔥</span>
+                <span class="badge badge-boost">BOOST</span>
+                <span class="version-tag">v93</span>
+                <div>
+                    <a href="#" class="server-title-link">[ZM] COVID-19 MOD | FREE VIP | bc18go.ru</a>
+                    <div class="server-ip-sub">connect 25.88.23.141:27015</div>
+                </div>
+            </div>
+            <div class="right-meta">
+                <span class="map-name">zm_white_meow_v2</span>
+                <span class="player-count">👥 20 / 50</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
