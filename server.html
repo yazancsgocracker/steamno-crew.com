@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>steamno-crew.com | Server List</title>
+    <title>steamno-crew.com | Home</title>
     <style>
-        /* Base page theme styling */
         body {
             background-color: #0b0707;
             color: #ffffff;
@@ -13,12 +12,10 @@
             padding: 0;
         }
 
-        /* Top Header Area Box */
         .header-section {
             background-color: #190f0f;
             text-align: center;
             padding: 40px 20px 20px 20px;
-            border-bottom: 1px solid #231515;
         }
 
         .header-logo {
@@ -39,9 +36,9 @@
             letter-spacing: 0.5px;
         }
 
-        /* Navigation Menu Bar */
         .nav-bar {
             background-color: #150c0c;
+            border-top: 1px solid #231515;
             border-bottom: 1px solid #231515;
             text-align: center;
             padding: 12px 0;
@@ -61,125 +58,61 @@
             color: #e6e600;
         }
 
-        /* Container for the Server List Interface */
-        .server-interface-container {
-            max-width: 950px;
-            margin: 30px auto;
-            padding: 0 20px;
+        .menu-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px 40px;
         }
 
-        /* Radmin VPN Info Top Bar */
-        .radmin-top-bar {
-            background-color: #110909;
-            border: 1px solid #2c1a1a;
-            border-radius: 4px;
-            padding: 15px 20px;
+        .menu-item {
+            font-size: 17px;
             margin-bottom: 25px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            user-select: none;
         }
 
-        .radmin-title {
-            color: #ff4444;
-            font-weight: bold;
-            font-size: 15px;
-            text-transform: uppercase;
-        }
-
-        .radmin-details {
-            font-size: 14px;
+        .menu-item a {
             color: #d1c7c7;
-        }
-
-        .radmin-details span {
-            color: #ffffff;
-            font-family: monospace;
-            background: #000000;
-            padding: 2px 6px;
-            border-radius: 3px;
-            margin-left: 5px;
-        }
-
-        /* Server Row Blueprint */
-        .server-row {
-            background: #140d0d;
-            border-left: 4px solid #d4af37; /* Gold edge highlight strip */
-            margin-bottom: 10px;
-            padding: 12px 15px;
-            border-radius: 0 4px 4px 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            transition: background 0.2s;
-        }
-
-        .server-row:hover {
-            background: #1c1212;
-        }
-
-        /* Left section elements styling */
-        .left-meta {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .status-icon {
-            font-size: 18px;
-        }
-
-        .badge {
-            font-size: 11px;
-            font-weight: bold;
-            padding: 2px 6px;
-            border-radius: 3px;
-            text-transform: uppercase;
-        }
-
-        .badge-gold { background-color: #d4af37; color: #000; }
-
-        .version-tag {
-            color: #ff4444;
-            font-size: 12px;
-            font-weight: bold;
-        }
-
-        .server-title-link {
-            color: #ffffff;
             text-decoration: none;
-            font-size: 15px;
-            font-weight: bold;
+            display: inline-block;
+            transition: color 0.2s;
         }
 
-        .server-title-link:hover {
-            color: #e6e600;
+        .menu-item a:hover {
+            color: #ffffff;
+            text-decoration: underline;
         }
 
-        .server-ip-sub {
-            font-size: 12px;
-            color: #7c7272;
-            margin-top: 4px;
-        }
-
-        /* Right section map layout metrics */
-        .right-meta {
-            display: flex;
-            align-items: center;
-            gap: 40px;
-            text-align: right;
-        }
-
-        .map-name {
-            font-size: 14px;
-            color: #a29797;
-            font-family: monospace;
-        }
-
-        .player-count {
-            font-size: 13px;
+        .dropdown-trigger {
             color: #d1c7c7;
-            min-width: 60px;
+            cursor: pointer;
+            display: inline-block;
+            transition: color 0.2s;
+        }
+
+        .dropdown-trigger:hover {
+            color: #ffffff;
+        }
+
+        .sub-version-list {
+            display: none;
+            list-style-type: none;
+            padding-left: 20px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .sub-version-list li {
+            margin: 12px 0;
+        }
+
+        .sub-version-list a {
+            color: #ff4444;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .sub-version-list a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -191,37 +124,37 @@
     </div>
 
     <div class="nav-bar">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="server.html" class="nav-link active">CSS Server</a>
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="server.html" class="nav-link">CSS Server</a>
     </div>
 
-    <div class="server-interface-container">
-
-        <div class="radmin-top-bar">
-            <div class="radmin-title">● RADMIN VPN ACTIVE</div>
-            <div class="radmin-details">
-                ROOM: <span>STEAMNO-CREW.COM</span>
-                <span style="margin-left: 15px;">PASSWORD:</span> <span>STEAMNO-CREW.COM</span>
-            </div>
+    <div class="menu-container">
+        <div class="menu-item">
+            <a href="https://bzzhr.co/ljbrffa0jd8q" target="_blank">Counter-Strike: Global Offensive 2013</a>
         </div>
 
-        <div class="server-row">
-            <div class="left-meta">
-                <span class="status-icon">👑</span>
-                <span class="badge badge-gold">GOLD</span>
-                <span class="version-tag">v93</span>
-                <div>
-                    <a href="#" class="server-title-link">STEAMNO PUBLIC | NO-STEAM | v93</a>
-                    <div class="server-ip-sub">connect 26.239.143.11:27075</div>
-                </div>
-            </div>
-            <div class="right-meta">
-                <span class="map-name">de_dust2</span>
-                <span class="player-count">👥 0 / 32</span>
-            </div>
+        <div class="menu-item">
+            <a href="https://yazancsgocracker.github.io/yazancsgocracker-csgo-2017-mp.github.io/" target="_blank">Counter-Strike: Global Offensive 2017 MP Online</a>
+        </div>
+        
+        <div class="menu-item">
+            <span class="dropdown-trigger" onclick="toggleCSSMenu()">Counter-Strike Source</span>
+            <ul id="cssDropdown" class="sub-version-list">
+                <li><a href="https://download1474.mediafire.com/1mb8ursubktgpeZvhoW2OIRdhjGBCn7bXjrxwcoW0n0Iyt8YJrTrSQ9vOc74gjJrd6WgqbxhSup6bpXx51mR3sL1HY8a6BXzwKtUQGjvDH_7H7Hv5QWwp0L_k0GBPeuOT4lIJehnxBv1jkHWj2pjNWxo2SZbO4TKzQjqFYf1M2R4rw/ly3qprv7gco831f/css+v91+steamno-crew.com.rar" target="_blank">- CSS Cracked v93</a></li>
+            </ul>
         </div>
 
+        <div class="menu-item">
+            <a href="https://bzzhr.co/zzwtlf9xbsnq" target="_blank">Garry's Mod</a>
+        </div>
     </div>
+
+    <script>
+        function toggleCSSMenu() {
+            var list = document.getElementById("cssDropdown");
+            list.style.display = (list.style.display === "block") ? "none" : "block";
+        }
+    </script>
 
 </body>
 </html>
