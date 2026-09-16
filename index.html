@@ -2,160 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>steamno-crew.com | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>steamno-crew | Under Reconstruction</title>
     <style>
-        body {
-            background-color: #0b0707;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
-k
-        .header-section {
-            background-color: #190f0f;
+        body {
+            background-color: #0f141c;
+            color: #f1f5f9;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
             text-align: center;
-            padding: 40px 20px 20px 20px;
+            padding: 20px;
         }
-
-        .header-logo {
-            width: 64px;
-            height: 64px;
-            object-fit: contain;
-            display: block;
-            margin: 0 auto 15px auto;
+        .container {
+            max-width: 500px;
+            background: #192231;
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            border: 1px solid #2a374e;
         }
-
-        .website-title {
-            color: #e6e600;
-            font-family: "Georgia", serif;
-            font-style: italic;
+        .badge {
+            display: inline-block;
+            background: #eab308;
+            color: #000;
+            font-size: 0.8rem;
             font-weight: bold;
-            font-size: 36px;
-            margin: 0;
-            letter-spacing: 0.5px;
-        }
-
-        .nav-bar {
-            background-color: #150c0c;
-            border-top: 1px solid #231515;
-            border-bottom: 1px solid #231515;
-            text-align: center;
-            padding: 12px 0;
-        }
-
-        .nav-link {
-            color: #d1c7c7;
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: bold;
-            margin: 0 20px;
+            padding: 4px 12px;
+            border-radius: 20px;
             text-transform: uppercase;
-            transition: color 0.2s;
-        }
-
-        .nav-link:hover, .nav-link.active {
-            color: #e6e600;
-        }
-
-        .menu-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 50px 40px;
-        }
-
-        .menu-item {
-            font-size: 17px;
-            margin-bottom: 25px;
-            user-select: none;
-        }
-
-        .menu-item a {
-            color: #d1c7c7;
-            text-decoration: none;
-            display: inline-block;
-            transition: color 0.2s;
-        }
-
-        .menu-item a:hover {
-            color: #ffffff;
-            text-decoration: underline;
-        }
-
-        .dropdown-trigger {
-            color: #d1c7c7;
-            cursor: pointer;
-            display: inline-block;
-            transition: color 0.2s;
-        }
-
-        .dropdown-trigger:hover {
-            color: #ffffff;
-        }
-
-        .sub-version-list {
-            display: none;
-            list-style-type: none;
-            padding-left: 20px;
-            margin-top: 10px;
+            letter-spacing: 1px;
             margin-bottom: 20px;
         }
-
-        .sub-version-list li {
-            margin: 12px 0;
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 12px;
+            color: #ffffff;
         }
-
-        .sub-version-list a {
-            color: #ff4444;
-            text-decoration: none;
-            font-size: 16px;
+        p {
+            color: #94a3b8;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
         }
-
-        .sub-version-list a:hover {
-            text-decoration: underline;
+        .status {
+            font-size: 0.9rem;
+            color: #64748b;
         }
     </style>
 </head>
 <body>
-
-    <div class="header-section">
-        <img class="header-logo" src="https://i.postimg.cc/tJSfdzQ9/avatar.png" alt="STEAMNO LOGO">
-        <h1 class="website-title">www.steamno-crew.com</h1>
+    <div class="container">
+        <span class="badge">Notice</span>
+        <h1>steamno-crew</h1>
+        <p>The site is currently under reconstruction. We are updating our game installers, files, and design.</p>
+        <div class="status">Check back soon for new updates!</div>
     </div>
-
-    <div class="nav-bar">
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="server.html" class="nav-link">CSS Server</a>
-        <a href="steam.html" class="nav-link">Steam Servers CSS</a>
-    </div>
-
-    <div class="menu-container">
-        <div class="menu-item">
-            <a href="https://bzzhr.co/ljbrffa0jd8q" target="_blank">Counter-Strike: Global Offensive 2013</a>
-        </div>
-
-        <div class="menu-item">
-            <a href="https://yazancsgocracker.github.io/yazancsgocracker-csgo-2017-mp.github.io/" target="_blank">Counter-Strike: Global Offensive 2017 MP Online</a>
-        </div>
-        
-        <div class="menu-item">
-            <span class="dropdown-trigger" onclick="toggleCSSMenu()">Counter-Strike Source</span>
-            <ul id="cssDropdown" class="sub-version-list">
-                <li><a href="https://bzzhr.co/nu2zxuuce1a0" target="_blank">- CSS Cracked v93</a></li>
-            </ul>
-        </div>
-
-        <div class="menu-item">
-            <a href="https://bzzhr.co/zzwtlf9xbsnq" target="_blank">Garry's Mod</a>
-        </div>
-    </div>
-
-    <script>
-        function toggleCSSMenu() {
-            var list = document.getElementById("cssDropdown");
-            list.style.display = (list.style.display === "block") ? "none" : "block";
-        }
-    </script>
-
 </body>
 </html>
